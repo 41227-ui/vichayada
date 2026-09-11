@@ -40,15 +40,17 @@
             box-shadow: 0 4px 15px #ddd;
         }
 
-        /* ⭐ ปรับขนาดรูปให้สวยและพอดี */
+        /* ⭐ แสดงภาพครบทั้งภาพ */
         .page-image {
             width: 100%;
-            height: 380px;
-            object-fit: cover;
+            height: auto;
+            max-height: 500px;
+            object-fit: contain;
             object-position: center;
             border-radius: 15px;
             margin-bottom: 25px;
             display: block;
+            background: #f0f0f0;
         }
 
         h2 {
@@ -88,10 +90,6 @@
 
     <div class="box">
 
-
-        <!-- =====================================
-             ⭐ รูปภาพประวัติอุดรธานี
-             ===================================== -->
 
         <img src="https://41227-ui.github.io/vichayada/img/history.png"
              alt="ประวัติอุดรธานี"
@@ -139,9 +137,6 @@
 
 </div>
 
-
-</body>
-</html>
 
 </body>
 </html>
