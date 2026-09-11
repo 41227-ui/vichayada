@@ -1,297 +1,236 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
-    <title>จังหวัดอุดรธานี | หน้าหลัก</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AWESOME อุดรธานี</title>
 
     <style>
+
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            margin: 0;
-            font-family: Tahoma, sans-serif;
-            background-color: #f4fbff;
+            font-family: "Tahoma", sans-serif;
+            background: #f5f7fa;
             color: #333;
+            line-height: 1.8;
         }
 
-        /* หัวเว็บไซต์ */
         header {
-            background: linear-gradient(135deg, #0066cc, #00a8a8);
+            background: linear-gradient(135deg, #8e44ad, #3498db);
             color: white;
             text-align: center;
-            padding: 30px 10px;
+            padding: 60px 20px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 40px;
+            font-size: 42px;
+            margin-bottom: 10px;
         }
 
         header p {
-            font-size: 18px;
-            margin-bottom: 0;
-        }
-
-        /* เมนู */
-        nav {
-            background-color: #004477;
-            text-align: center;
-            padding: 15px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 20px;
-            font-size: 17px;
-        }
-
-        nav a:hover {
-            color: #ffd700;
-        }
-
-        /* รูปหน้าหลัก */
-        .hero {
-    	height: 430px;
-    	background-image:
-        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-        url("udon.jpg");
-   	 background-size: cover;
-    	background-position: center;
-    	display: flex;
-    	justify-content: center;
-   	 align-items: center;
-    	text-align: center;
-   	 color: white;
-        }
-
-        .hero h2 {
-            font-size: 45px;
-            margin: 0;
-            text-shadow: 2px 2px 6px black;
-        }
-
-        .hero p {
             font-size: 20px;
-            text-shadow: 1px 1px 4px black;
         }
 
-        /* เนื้อหา */
-        .content {
-            width: 85%;
-            max-width: 1100px;
-            margin: auto;
-            padding: 40px 0;
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
         }
 
-        .title {
-            text-align: center;
-            color: #0066cc;
-            font-size: 30px;
-            margin-bottom: 25px;
-        }
-
-        .welcome {
-            background-color: white;
+        .box {
+            background: white;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 4px 12px #d0d0d0;
-            text-align: center;
-            line-height: 1.8;
-            font-size: 18px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
         }
 
-        /* การ์ด */
-        .cards {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
+        /* =========================
+           รูปภาพหน้าหลัก
+           ========================= */
 
-        .card {
-            background-color: white;
-            width: 300px;
+        .main-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
             border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px #ccc;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #8e44ad;
+            margin-bottom: 15px;
+        }
+
+        /* =========================
+           ลิงก์ทั้ง 5 หน้า
+           ========================= */
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            background: #ecf0f1;
+            color: #333;
+            padding: 15px;
+            margin: 12px 0;
+            border-radius: 10px;
             transition: 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-8px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 190px;
-            object-fit: cover;
-        }
-
-        .card h3 {
-            color: #0066cc;
-            padding: 0 20px;
-        }
-
-        .card p {
-            padding: 0 20px 20px;
-            line-height: 1.6;
-        }
-
-        /* จุดเด่น */
-        .highlight {
-            background: linear-gradient(135deg, #e6f7ff, #e8ffff);
-            padding: 30px;
-            border-radius: 15px;
-            text-align: center;
-            line-height: 2;
-            font-size: 18px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #004477;
+        .menu a:hover {
+            background: #8e44ad;
             color: white;
-            text-align: center;
-            padding: 25px;
-            margin-top: 20px;
+            transform: translateX(5px);
         }
+
+        footer {
+            text-align: center;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
     </style>
 </head>
 
 <body>
 
-    <!-- หัวเว็บไซต์ -->
-    <header>
-        <h1>🌿 จังหวัดอุดรธานี 🌿</h1>
-        <p>เมืองแห่งธรรมชาติ วัฒนธรรม และประวัติศาสตร์</p>
-    </header>
 
-    <!-- เมนูหลัก -->
-    <nav>
-        <a href="#">หน้าหลัก</a>
-        <a href="#">ประวัติจังหวัด</a>
-        <a href="#">สถานที่ท่องเที่ยว</a>
-        <a href="#">อาหารขึ้นชื่อ</a>
-        <a href="#">ผู้จัดทำ</a>
-    </nav>
+<header>
 
-<!-- แบนเนอร์หน้าหลัก --> 
-<section class="hero"> 
-    <div> 
-        <h2>ยินดีต้อนรับสู่อุดรธานี</h2> 
-        <p>มาสัมผัสเสน่ห์เมืองอีสานที่เต็มไปด้วยเรื่องราวและความสวยงาม</p> 
-	<backg>
-    </div> 
-</section>
+    <h1>AWESOME อุดรธานี</h1>
 
-   <!-- แนะนำจังหวัด -->
-    <section class="content">
+    <p>
+        เมืองแห่งธรรมชาติ วัฒนธรรม และความประทับใจ
+    </p>
 
-        <h2 class="title">💙 ยินดีต้อนรับสู่จังหวัดอุดรธานี</h2>
+</header>
 
-        <div class="welcome">
-            <p>
-                <b>อุดรธานี</b> เป็นจังหวัดสำคัญในภาคตะวันออกเฉียงเหนือ
-                มีสถานที่ท่องเที่ยวที่หลากหลาย ทั้งธรรมชาติ
-                โบราณสถาน วัดวาอาราม และแหล่งเรียนรู้ทางวัฒนธรรม
-            </p>
 
-            <p>
-                เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำข้อมูลที่น่าสนใจเกี่ยวกับ
-                จังหวัดอุดรธานี และพาทุกคนไปรู้จักสถานที่สำคัญ
-                อาหารขึ้นชื่อ และเสน่ห์ของจังหวัดแห่งนี้
-            </p>
-        </div>
+<div class="container">
 
-    </section>
 
-   <!-- สถานที่แนะนำ -->  
-<section class="content">  
-  
-    <h2 class="title">📍 สถานที่ท่องเที่ยวแนะนำ</h2>  
-  
-    <div class="cards">  
-  
-        <div class="card">  
-            <img src="https://s359.kapook.com/pagebuilder/8cfaa56d-292e-459c-992f-390a906b7177.jpg"
-                 alt="ทะเลบัวแดง">  
-  
-            <h3>🌺 ทะเลบัวแดง</h3>  
-  
-            <p>  
-                ชมความงดงามของดอกบัวแดงที่บานเต็มหนองหาน 
-                เป็นหนึ่งในสถานที่ท่องเที่ยวทางธรรมชาติ 
-                ที่มีชื่อเสียงของจังหวัดอุดรธานี 
-            </p>  
-              
-        </div>  
-  
-  
-        <div class="card">  
-            <img src="https://s.isanook.com/tr/0/ud/279/1399249/9-2.jpg"
-                 alt="บ้านเชียง">  
-  
-            <h3>🏺 บ้านเชียง</h3>  
-  
-            <p>  
-                แหล่งโบราณคดีสำคัญที่มีเรื่องราวทางประวัติศาสตร์ 
-                และวัฒนธรรมอันยาวนาน 
-                เป็นสถานที่ที่น่าสนใจสำหรับผู้ที่ชื่นชอบประวัติศาสตร์ 
-            </p>  
-             
-        </div>  
-  
-  
-        <div class="card">  
-            <img src="https://www.asiakingtravel.fr/cuploads/files/Wat-Pa-Phu-Kon-5.jpg"
-                 alt="วัดป่าภูก้อน">  
-  
-            <h3>⛩️ วัดป่าภูก้อน</h3>  
-  
-            <p>  
-                วัดสวยท่ามกลางธรรมชาติ มีบรรยากาศสงบ 
-                เหมาะสำหรับการท่องเที่ยว ทำบุญ 
-                และพักผ่อน 
-            </p>  
-             
-        </div>  
-  
-    </div> 
- 
-</section>
+    <!-- =========================================
+         กล่องแนะนำจังหวัด
+         ========================================= -->
 
-    <!-- จุดเด่น -->
-    <section class="content">
+    <div class="box">
 
-        <h2 class="title">✨ จุดเด่นของอุดรธานี</h2>
 
-        <div class="highlight">
+        <!-- =========================================
+             udon.jpg
+             ========================================= -->
 
-            🌸 ธรรมชาติสวยงาม<br>
+        <img src="D:\30_Vichayada\udon.jpg" 
+             alt="จังหวัดอุดรธานี">
 
-            🏺 มีแหล่งโบราณคดีและประวัติศาสตร์ที่สำคัญ<br>
 
-            🙏 มีวัดและสถานที่สำคัญทางศาสนามากมาย<br>
+        <h2>
+            ยินดีต้อนรับสู่ AWESOME อุดรธานี
+        </h2>
 
-            🍜 มีอาหารอีสานรสชาติอร่อย<br>
 
-            ❤️ ผู้คนเป็นมิตรและมีวัฒนธรรมที่น่าสนใจ
+        <p>
+            จังหวัดอุดรธานีเป็นจังหวัดสำคัญในภาคตะวันออกเฉียงเหนือ
+            มีทั้งสถานที่ท่องเที่ยวทางธรรมชาติ
+            แหล่งประวัติศาสตร์ วัฒนธรรม และอาหารที่น่าสนใจ
+        </p>
 
-        </div>
 
-    </section>
+        <p>
+            เว็บไซต์ AWESOME อุดรธานี
+            จัดทำขึ้นเพื่อรวบรวมข้อมูลที่น่าสนใจ
+            และแนะนำเสน่ห์ของจังหวัดอุดรธานี
+        </p>
 
-    <!-- ท้ายเว็บไซต์ -->
-    <footer>
-        <p><b>เว็บไซต์แนะนำจังหวัดอุดรธานี</b></p>
-        <p>จัดทำโดย น.ส.วิชญาดา อาจห้วยแก้ว และ น.ส.สุณิสา บุญนพ</p>
-        <p>© 2026 Udon Thani Website</p>
-    </footer>
+    </div>
+
+
+    <!-- =========================================
+         ลิงก์ไปยังอีก 5 หน้า
+         ========================================= -->
+
+    <div class="box menu">
+
+        <h2>
+            สำรวจ AWESOME อุดรธานี
+        </h2>
+
+
+        <!-- หน้า 1 -->
+
+        <a href="history.html">
+
+            🏛️ ประวัติและข้อมูลทั่วไป
+
+        </a>
+
+
+        <!-- หน้า 2 -->
+
+        <a href="attractions.html">
+
+            🌸 สถานที่ท่องเที่ยว
+
+        </a>
+
+
+        <!-- หน้า 3 -->
+
+        <a href="food.html">
+
+            🍜 อาหารและของขึ้นชื่อ
+
+        </a>
+
+
+        <!-- หน้า 4 -->
+
+        <a href="culture.html">
+
+            🎉 ประเพณีและวัฒนธรรม
+
+        </a>
+
+
+        <!-- หน้า 5 -->
+
+        <a href="travel.html">
+
+            🚗 การเดินทาง
+
+        </a>
+
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>
+        AWESOME อุดรธานี
+    </p>
+
+    <p>
+     	นางสาววิชญาดา อาจห้วยแก้ว (30)
+    </p>
+
+    <p>
+	นางสาวสุณิสา บุญนพ (34)
+    </p>
+
+</footer>
+
 
 </body>
 </html>
-```
