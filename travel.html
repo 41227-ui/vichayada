@@ -40,12 +40,16 @@
             box-shadow: 0 4px 15px #ddd;
         }
 
+        /* ⭐ ปรับภาพให้กว้างพอดีและเห็นภาพครบ */
         .travel-image {
             width: 100%;
-            height: 350px;
-            object-fit: cover;
+            height: 400px;
+            object-fit: contain;
+            object-position: center;
             border-radius: 15px;
             margin-bottom: 25px;
+            display: block;
+            background: #f5f5f5;
         }
 
         h2 {
@@ -89,13 +93,7 @@
 
 
         <!-- =====================================
-             ⭐⭐⭐ ใส่รูปการเดินทางตรงนี้ ⭐⭐⭐
-
-             แนะนำรูป:
-             เครื่องบิน / รถไฟ / รถยนต์ / ถนน
-
-             ชื่อไฟล์:
-             travel.jpg
+             ⭐⭐⭐ รูปการเดินทาง ⭐⭐⭐
              ===================================== -->
 
         <img src="https://41227-ui.github.io/vichayada/img/travel.jpg"
